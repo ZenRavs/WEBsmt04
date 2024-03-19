@@ -1,0 +1,25 @@
+.button{
+    display: inline-flex;
+    padding: 1%;
+    font-size: 14px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+th{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+tr,td{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    padding: 10px;
+}
