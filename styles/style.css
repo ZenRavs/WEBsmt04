@@ -1,14 +1,5 @@
-.button{
-    display: inline-flex;
-    padding: 1%;
-    font-size: 14px;
-    text-align: center;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-}
 table {
+    margin: auto ;
     border-collapse: separate;
     border-spacing: 0;
 }
@@ -24,29 +15,81 @@ tr,td{
     padding: 10px;
 }
 
-body {
-    margin: 50px;
-    border: 1px #007BFF solid;
+body, html{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #c7c7c7;
+    margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    overflow: hidden;
 }
-.container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-h1 {
-    color: #333;
-}
-p {
-    color: #666;
-}
-a {
+
+.button{
     display: inline-block;
-    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
     background-color: #007BFF;
-    padding: 10px 20px;
-    margin: 20px 0;
-    text-decoration: none;
+    color: white;
     border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+    height: auto;
+}
+
+.container{
+    display: flow-root;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.content {
+    display: block;
+    background-color: white;
+    width: 60%;
+    height: auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+.panelContent{
+    display: block;
+    background-color: #ffffff;
+    color: rgb(0, 17, 255);
+    margin-top: 4px;
+    margin-bottom: 4pxpx;
+    padding: 5px;
+    border-radius: 0px 10px 10px 0px ;
+    
+}
+
+.leftPanel {
+    margin-top: 80px;
+    background-color: #c7c7c7;
+    overflow-y: auto;
+    word-wrap: break-word;
+    max-width: 22%;
+}
+
+.header {
+    display: inline-block;
+    background-color: #f8f9fa;
+    color: #007BFF;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    border-bottom: #007BFF solid 2.25px;
+    top: 0;
+    left: 0;
+}
+
+.imgCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
