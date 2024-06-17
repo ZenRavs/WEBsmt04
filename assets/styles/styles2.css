@@ -1,0 +1,22 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    display: flex;
+    margin: auto;
+    background-color: #ddd;
+    width: 66%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.container img {
+    margin: auto;
+    border-radius: 20px;
+}
+.content {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin: auto;
+}
