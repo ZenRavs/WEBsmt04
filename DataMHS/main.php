@@ -21,16 +21,16 @@
                 <tr>
                     <th>No</th>
                     <th>User ID</th>
-                    <th>Nama</th>
+                    <th>Name</th>
                     <th>Username</th>
                     <th>Email</th>
                     <th>Password</th>
                     <th>Status</th>
-                    <th>Aksi</th>
+                    <th>Action</th>
                 </tr>
         <?php
         $i = 1;
-        $row = 1;
+        $userid;
         foreach($data as $value)
         {
             ?>
@@ -44,18 +44,17 @@
         ?>
             <tr>
                 <td><?php echo $i?></td>
-                <td><?php echo $row?></td>
+                <td><?php echo $value['userid']?></td>
                 <td><?php echo $value['nama']?></td>
                 <td><?php echo $value['username']?></td>
                 <td><?php echo $value['email']?></td>
                 <td><?php echo $value['passwd']?></td>
                 <td><?php echo $value['active'] == 1?"Aktif":"Tidak aktif"?></td>
                 <td>
-                    
                     <a href="edit.php?i=<?php echo $value['userid']?>">Edit</a> or 
                     <form action="edit.php" method="post">
-                        <?php $userid = $value['userid']?>
-                        <input type="submit" value="Edit" id="<?php $userid ?>">
+                        <input type="hidden" name="userid" value="<?php $userid = $value['userid']?>">
+                        <input type="submit" value="Edit">
                     </form> or 
                     <a href="delete.php?i=<?php echo $value['userid']?>">Delete</a>
                 </td>

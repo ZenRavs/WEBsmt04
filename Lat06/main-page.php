@@ -1,3 +1,9 @@
+<?php
+include("dbconnect.php");
+session_start();
+if(isset($_SESSION['user']))
+{
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,13 +46,16 @@
                         
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Lat06-page2.html">Biodata</a>
+                        <a class="nav-link" href="my-bio.php">Biodata</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Lat06-page3.html">Schedule</a>
+                        <a class="nav-link" href="my-schedules.php">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destroy-session.php">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -69,24 +78,24 @@
                 <h3>Some Galleries</h3>
                 <div class="row">
                 <div class="col-md-3">
-                    <img src="../../WEB/Assets/IMG/pict01.png" class="img-fluid align-self-center" style="height: 200px;
+                    <img src="../Assets/IMG/pict01.png" class="img-fluid align-self-center" style="height: 200px;
                     width: 200px;" alt="hzl">
                     <p>This is hazel, a fictional character</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="../../WEB/Assets/IMG/Hzel/47716315_oyfFmebAN7dIXXS.png" class="img-fluid" alt="hzl">
+                    <img src="../Assets/IMG/Hzel/47716315_oyfFmebAN7dIXXS.png" class="img-fluid" alt="hzl">
                     <p>Also this..</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="../../WEB/Assets/IMG/Hzel/daedd798-d0e4-4479-bcbf-f5fe9eea090b.jpeg" class="img-fluid" alt="hzl">
+                    <img src="../Assets/IMG/Hzel/daedd798-d0e4-4479-bcbf-f5fe9eea090b.jpeg" class="img-fluid" alt="hzl">
                     <p>this..</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="../../WEB/Assets/IMG/Hzel/Eunqwv8VkAYhJ8z.png" class="img-fluid" alt="hzl">
+                    <img src="../Assets/IMG/Hzel/Eunqwv8VkAYhJ8z.png" class="img-fluid" alt="hzl">
                     <p>again..</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="../../WEB/Assets/IMG/pict01.png" class="img-fluid" alt="hzl">
+                    <img src="../Assets/IMG/pict01.png" class="img-fluid" alt="hzl">
                     <p>and the last.</p>
                 </div>
                 
@@ -102,3 +111,11 @@
       </div>
 </body>
 </html>
+<?php
+}
+else
+{
+    echo "You haven't start session yet. ";
+    echo '<a href="index.php">Continue..</a>';
+}
+?>
