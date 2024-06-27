@@ -8,10 +8,10 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 
 if ($password == "") {
-    $query = "UPDATE web_users SET username='$user', email='$email', nama='$nama' WHERE id=$id";
+    $query = "UPDATE web_users SET username='$username', email='$email', name='$name' WHERE userid=" . $userid;
 } else {
-    $paswd = ($password);
-    $query = "UPDATE web_users SET username='$user', email='$email', nama='$nama', paswd='$paswd' WHERE id=$id";
+    $passwd = ($password);
+    $query = "UPDATE web_users SET username='$username', email='$email', name='$name', passwd='$passwd' WHERE userid=" . $userid;
 }
 
 $dbc->query($query);
