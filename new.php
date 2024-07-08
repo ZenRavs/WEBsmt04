@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evSXbVzTVFTLwSL1mmQWKG1zWrqtjD0VyrnUd4GwPuRCkjdvwlURyLMnGE8QtQAS" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evSXbVzTVFTLwSL1mmQWKG1zWrqtjD0VyrnUd4GwPuRCkjdvwlURyLMnGE8QtQAS" crossorigin="anonymous"> -->
 </head>
 <body>
     <div class="container mt-5">
@@ -17,8 +17,8 @@
                     <?php echo $message; ?>
                 </div>
                 <?php endif; ?>
-                <form action="" method="post">
-                <div class="mb-3">
+                <form action="" method="post"> 
+                <!-- <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
                     <input type="text" name="username" id="username" class="form-control" required>
                 </div>
@@ -26,7 +26,7 @@
                     <label for="password" class="form-label">Password</label>
                     <input type="password" name="password" id="password" class="form-control" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary">Login</button> -->
                 </form>
             </div>
             </div>
